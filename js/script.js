@@ -9,7 +9,7 @@ var bioText2 = "His 2001 film Spirited Away became the highest-grossing film in 
 var bioText3 = " Miyazaki's works have been highly praised and awarded; he was named a Person of Cultural Merit for outstanding cultural contributions in November 2012, and received the Academy Honorary Award for his impact on animation and cinema in November 2014. In 2002, American film critic Roger Ebert suggested that Miyazaki may be the best animation filmmaker in history, praising the depth and artistry of his films.[2] Miyazaki has frequently been cited as an inspiration for numerous animators, directors, and writers." + "<br /><br /><a href='https://en.wikipedia.org/wiki/Hayao_Miyazaki' target='_blank' class='biography-learn-more-btn'>Learn More</a>"; 
 
 // show initial biography text, grey out prev text button
-document.getElementById("tribute-info").innerHTML = bioText0;
+document.getElementById("biography-text").innerHTML = bioText0;
 document.getElementById("biography-text-prev").style.opacity = 0.3;
 
 // next biography text button
@@ -18,19 +18,19 @@ function nextBioText() {
 		bioTextNum++;
 	}
 	if (bioTextNum == 0) {
-		document.getElementById("tribute-info").innerHTML = bioText0;
+		document.getElementById("biography-text").innerHTML = bioText0;
 
 	} 
 	else if (bioTextNum == 1) {
-		document.getElementById("tribute-info").innerHTML = bioText1;
+		document.getElementById("biography-text").innerHTML = bioText1;
 		document.getElementById("biography-text-prev").style.opacity = 1;
 		document.getElementById("biography-text-prev").classList.remove('noclick');
 	} 
 	else if (bioTextNum == 2) {
-		document.getElementById("tribute-info").innerHTML = bioText2;
+		document.getElementById("biography-text").innerHTML = bioText2;
 	} 
 	else if (bioTextNum == 3) {
-		document.getElementById("tribute-info").innerHTML = bioText3;
+		document.getElementById("biography-text").innerHTML = bioText3;
 		document.getElementById("biography-text-next").style.opacity = 0.3;
 		document.getElementById("biography-text-next").classList.add('noclick');
 	}
@@ -43,20 +43,20 @@ function prevBioText() {
 	}
 
 	if (bioTextNum == 0) {
-		document.getElementById("tribute-info").innerHTML = bioText0;
+		document.getElementById("biography-text").innerHTML = bioText0;
 		document.getElementById("biography-text-prev").style.opacity = 0.3;
 		document.getElementById("biography-text-prev").classList.add('noclick');
 	} 
 	else if (bioTextNum == 1) {
-		document.getElementById("tribute-info").innerHTML = bioText1;
+		document.getElementById("biography-text").innerHTML = bioText1;
 	} 
 	else if (bioTextNum == 2) {
-		document.getElementById("tribute-info").innerHTML = bioText2;
+		document.getElementById("biography-text").innerHTML = bioText2;
 		document.getElementById("biography-text-next").style.opacity = 1;
 		document.getElementById("biography-text-next").classList.remove('noclick');
 	} 
 	else if (bioTextNum == 3) {
-		document.getElementById("tribute-info").innerHTML = bioText3;
+		document.getElementById("biography-text").innerHTML = bioText3;
 	}
 }
 
