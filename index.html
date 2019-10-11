@@ -12,237 +12,227 @@
   <link rel="stylesheet" href="css/style.css?v=1.0">
 
   <script src="https://kit.fontawesome.com/5e0ee3fd42.js" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
-	<div id="main">
-		<div class="container">
-			<header>
-				<img class="header-logo"src="images/logo.svg" alt="Hayao Miyazaki Large Logo">
-				<img class="header-logo-small"src="images/logo-small.svg" alt="Hayao Miyazaki Small Logo">
-				<nav>
-					<ul>
-						<li><a href="#biography">bio</a></li>
-						<li><a href="#films">films</a></li>
-						<li>
-				    		<a id="tribute-link" href='https://en.wikipedia.org/wiki/Hayao_Miyazaki' target='_blank'>wiki</a>
-				    	</li>
-					</ul>
-				</nav>
-			</header>	
 
-		</div>
+	<div class="container">
 
-		<div class="quote-banner">
+		<header>
+			<img class="header-logo"src="images/logo.svg" alt="Hayao Miyazaki Large Logo">
+			<img class="header-logo-small"src="images/logo-small.svg" alt="Hayao Miyazaki Small Logo">
+			<nav>
+				<ul>
+					<li><a href="#biography">bio</a></li>
+					<li><a href="#films">films</a></li>
+				</ul>
+			</nav>
+		</header>	
 
-			<div class="container-large">
-				<img class="quote-banner-image" src="images/miyazaki-head.png" alt="Hayao Miyazaki Portrait">
-				<p class="quote-text">
-					"I would like to make a film to tell <br />children '<strong>it's good to be alive</strong>'"
-				</p>
-			</div>
-
-		</div>
-
-		<div class="container">
-			
-			<section class="biography-section">
-				
-				<a name="biography"></a>
-				<h1 class="biography-h1">Biography</h1>
-
-				<figure>
-
-					<div class="biography-image-crop">
-						<div id="img-div">
-					    	<img id="image" class="biography-image" src="images/miyazaki-portrait.jpg" alt="Hayao Miyazaki Portrait">
-					    	<div id="img-caption">Hayao Miyazaki</div>
-					    </div>
-					</div>
-
-				    <figcaption class="biography-image-caption">
-				    	<span class="biography-image-caption-large"><strong id="title">Hayao Miyazaki</strong> <br /> <br />Birthday:January 5, 1941<br />Birthplace: Toyko, Japan</span>
-				    	<span class="biography-image-caption-small"><strong id="title">Hayao Miyazaki</strong> (Birthday:January 5, 1941, Birthplace: Toyko, Japan)</span>
-				    	<br />
-				    </figcaption>
-
-				</figure>
-
-				<p id="tribute-info">
-					Hayao Miyazaki (宮崎 駿 Miyazaki Hayao, born January 5, 1941) is a Japanese animator, filmmaker, screenwriter, author, and manga artist. A co-founder of Studio Ghibli, a film and animation studio, he has attained international acclaim as a masterful storyteller and as a maker of animated feature films, and is widely regarded as one of the greatest animation filmmakers of all time." + "<br /> <br />" + "Born in Bunkyō Ward of Tokyo, Miyazaki expressed interest in manga and animation from an early age, and he joined Toei Animation in 1963. During his early years at Toei Animation he worked as an in-between artist and later collaborated with director Isao Takahata. Notable films to which Miyazaki contributed at Toei include Doggie March and Gulliver's Travels Beyond the Moon. He provided key animation to other films at Toei, such as Puss in Boots and Animal Treasure Island, before moving to A-Pro in 1971, where he co-directed Lupin the Third Part I alongside Takahata.
-				</p>
-
-				<div class="biography-text-btn">
-
-					<ul>
-						<li id="biography-text-prev" class="noselect noclick" onclick="prevBioText()">
-							<a href="#biography">
-								<i class="far fa-arrow-alt-circle-left"></i>
-							</a>
-						</li>
-						<li id="biography-text-next" class="noselect" onclick="nextBioText()">
-							<a href="#biography">
-								<i class="far fa-arrow-alt-circle-right"></i>
-							</a>
-						</li>
-					</ul>
-
-				</div>
-
-			</section>
-
-		</div>
-
-		<section class="film-section">
-
-			<div class="container">
-				<a name="films"></a>
-				<h1 class="filmography-h1">filmography</h1>
-
-				<div class="film-list">
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/The_Castle_of_Cagliostro" target="_blank">
-							<img class = "film-group-1 film-cover film-list-item-anim" src="images/covers/castle-of-cagliostro.jpg" alt="Castle of Cagliostro Movie Cover" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								The Castle of Cagliostro
-							</span>
-						</a>
-					</div>
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/Nausicaä_of_the_Valley_of_the_Wind_(film)" target="_blank">
-							<img class = "film-group-1 film-cover film-list-item-anim" src="images/covers/nausicaa.jpg" alt="Nausicaa and the Valley of the Wind" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								Nausicaä of the Valley of the Wind
-							</span>
-						</a>
-					</div>
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/My_Neighbor_Totoro" target="_blank">
-							<img class = "film-group-1 film-cover film-list-item-anim" src="images/covers/totoro.jpg" alt="My Neighbor Totoro" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								My Neighbor Totoro
-							</span>
-						</a>
-					</div>
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/Castle_in_the_Sky" target="_blank">
-							<img class = "film-group-1 film-cover film-list-item-anim" src="images/covers/castle-in-the-sky.jpg" alt="Castle in the Sky" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								Castle in the Sky
-							</span>
-						</a>
-					</div>
-					<!--end group 1-->
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/Kiki%27s_Delivery_Service" target="_blank">
-							<img class = "film-group-2 film-cover film-list-item-anim" src="images/covers/kikis-delivery-service.jpg" alt="Kiki's Delivery Service" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								Kiki's Delivery Service
-							</span>
-						</a>
-					</div>
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/Porco_Rosso" target="_blank">
-							<img class = "film-group-2 film-cover film-list-item-anim" src="images/covers/porco-rosso.jpg" alt="Porco Rosso" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								Porco Rosso
-							</span>
-						</a>
-					</div>
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/Princess_Mononoke" target="_blank">
-							<img class = "film-group-2 film-cover film-list-item-anim" src="images/covers/mononoke.jpg" alt="Princess Mononoke" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								Princess Mononoke
-							</span>
-						</a>
-					</div>
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank">
-							<img class = "film-group-2 film-cover film-list-item-anim" src="images/covers/spirited-away.jpg" alt="Spirited Away" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								Spirited Away
-							</span>
-						</a>
-					</div>
-					<!--end group 2-->
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/Howl%27s_Moving_Castle_%28film%29" target="_blank">
-							<img class = "film-group-3 film-cover film-list-item-anim" src="images/covers/howls-moving-castle.jpg" alt="Howl's Moving Castle" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								Howl's Moving Castle
-							</span>
-						</a>
-					</div>
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/Ponyo" target="_blank">
-							<img class = "film-group-3 film-cover film-list-item-anim" src="images/covers/ponyo.jpg" alt="Ponyo" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								Ponyo
-							</span>
-						</a>
-					</div>
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/The_Wind_Rises" target="_blank">
-							<img class = "film-group-3 film-cover film-list-item-anim" src="images/covers/the-wind-rises.jpg" alt="The Wind Rises" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								The Wind Rises
-							</span>
-						</a>
-					</div>
-
-					<div class="film-list-item">
-						<a href="https://en.wikipedia.org/wiki/How_Do_You_Live%3F_(film)" target="_blank">
-							<img class = "film-group-3 film-cover film-list-item-anim" src="images/covers/how-do-you-live.jpg" alt="How Do You Live?" />
-
-							<span class="film-list-item-detail film-list-item-detail-anim">
-								How Do You Live?
-							</span>
-						</a>
-					</div>
-					<!--end group 3-->
-
-				</div>
-
-					<div id="film-more">
-						<button id="film-more-btn" onclick="filmReveal()">
-							<i class="far fa-arrow-alt-circle-down"></i>
-						</button>
-					</div>
-
-			</div>
-		</section>
-
-		<footer>
-			<p>©2019 Hayao Miyazaki & Studio Ghibli. All Rights Reserved.<br />Website by swoodo</p>
-		</footer>
 	</div>
 
+	<div class="quote-banner">
 
+		<div class="container-large">
+			<img class="quote-banner-image" src="images/miyazaki-head.png" alt="Hayao Miyazaki Portrait">
+			<p class="quote-text">
+				"I would like to make a film to tell <br />children '<strong>it's good to be alive</strong>'"
+			</p>
+		</div>
+
+	</div>
+
+	<div class="container">
+		
+		<section class="biography-section">
+
+			<a name="biography"></a>
+			<h1 class="biography-h1">Biography</h1>
+
+			<figure>
+
+				<div class="biography-image-crop">
+				    <img class="biography-image" src="images/miyazaki-portrait.jpg" alt="Hayao Miyazaki Portrait">
+				</div>
+
+			    <figcaption class="biography-image-caption">
+			    	<span class="biography-image-caption-large"><strong>Hayao Miyazaki</strong> <br /> <br />Birthday:January 5, 1941<br />Birthplace: Toyko, Japan</span>
+			    	<span class="biography-image-caption-small"><strong>Hayao Miyazaki</strong> (Birthday:January 5, 1941, Birthplace: Toyko, Japan)</span>
+			    </figcaption>
+
+			</figure>
+			
+			<p id="biography-text"> </p>
+
+			<div class="biography-text-btn">
+
+				<ul>
+					<li id="biography-text-prev" class="noselect noclick" onclick="prevBioText()">
+						<a href="#biography">
+							<i class="far fa-arrow-alt-circle-left"></i>
+						</a>
+					</li>
+					<li id="biography-text-next" class="noselect" onclick="nextBioText()">
+						<a href="#biography">
+							<i class="far fa-arrow-alt-circle-right"></i>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</section>
+
+
+	</div>
+
+	<section class="film-section">
+
+		<div class="container">
+			<a name="films"></a>
+			<h1 class="filmography-h1">filmography</h1>
+
+			<div class="film-list">
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/The_Castle_of_Cagliostro" target="_blank">
+						<img class = "film-group-1 film-cover film-list-item-anim" src="images/covers/castle-of-cagliostro.jpg" alt="Castle of Cagliostro Movie Cover" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							The Castle of Cagliostro
+						</span>
+					</a>
+				</div>
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/Nausicaä_of_the_Valley_of_the_Wind_(film)" target="_blank">
+						<img class = "film-group-1 film-cover film-list-item-anim" src="images/covers/nausicaa.jpg" alt="Nausicaa and the Valley of the Wind" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							Nausicaä of the Valley of the Wind
+						</span>
+					</a>
+				</div>
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/My_Neighbor_Totoro" target="_blank">
+						<img class = "film-group-1 film-cover film-list-item-anim" src="images/covers/totoro.jpg" alt="My Neighbor Totoro" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							My Neighbor Totoro
+						</span>
+					</a>
+				</div>
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/Castle_in_the_Sky" target="_blank">
+						<img class = "film-group-1 film-cover film-list-item-anim" src="images/covers/castle-in-the-sky.jpg" alt="Castle in the Sky" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							Castle in the Sky
+						</span>
+					</a>
+				</div>
+				<!--end group 1-->
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/Kiki%27s_Delivery_Service" target="_blank">
+						<img class = "film-group-2 film-cover film-list-item-anim" src="images/covers/kikis-delivery-service.jpg" alt="Kiki's Delivery Service" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							Kiki's Delivery Service
+						</span>
+					</a>
+				</div>
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/Porco_Rosso" target="_blank">
+						<img class = "film-group-2 film-cover film-list-item-anim" src="images/covers/porco-rosso.jpg" alt="Porco Rosso" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							Porco Rosso
+						</span>
+					</a>
+				</div>
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/Princess_Mononoke" target="_blank">
+						<img class = "film-group-2 film-cover film-list-item-anim" src="images/covers/mononoke.jpg" alt="Princess Mononoke" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							Princess Mononoke
+						</span>
+					</a>
+				</div>
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/Spirited_Away" target="_blank">
+						<img class = "film-group-2 film-cover film-list-item-anim" src="images/covers/spirited-away.jpg" alt="Spirited Away" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							Spirited Away
+						</span>
+					</a>
+				</div>
+				<!--end group 2-->
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/Howl%27s_Moving_Castle_%28film%29" target="_blank">
+						<img class = "film-group-3 film-cover film-list-item-anim" src="images/covers/howls-moving-castle.jpg" alt="Howl's Moving Castle" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							Howl's Moving Castle
+						</span>
+					</a>
+				</div>
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/Ponyo" target="_blank">
+						<img class = "film-group-3 film-cover film-list-item-anim" src="images/covers/ponyo.jpg" alt="Ponyo" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							Ponyo
+						</span>
+					</a>
+				</div>
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/The_Wind_Rises" target="_blank">
+						<img class = "film-group-3 film-cover film-list-item-anim" src="images/covers/the-wind-rises.jpg" alt="The Wind Rises" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							The Wind Rises
+						</span>
+					</a>
+				</div>
+
+				<div class="film-list-item">
+					<a href="https://en.wikipedia.org/wiki/How_Do_You_Live%3F_(film)" target="_blank">
+						<img class = "film-group-3 film-cover film-list-item-anim" src="images/covers/how-do-you-live.jpg" alt="How Do You Live?" />
+
+						<span class="film-list-item-detail film-list-item-detail-anim">
+							How Do You Live?
+						</span>
+					</a>
+				</div>
+				<!--end group 3-->
+
+			</div>
+
+				<div id="film-more">
+					<button id="film-more-btn" onclick="filmReveal()">
+						<i class="far fa-arrow-alt-circle-down"></i>
+					</button>
+				</div>
+
+		</div>
+	</section>
+
+	<footer>
+		<p>©2019 Hayao Miyazaki & Studio Ghibli. All Rights Reserved.<br />Website by swoodo</p>
+	</footer>
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>
