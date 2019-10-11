@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i&display=swap');
+
+:root {
+  --my-orange: #E7A79B;
+  --my-grey: #9FA7BE;
+  --my-yellow: #F5EDC9;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.noselect {
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none; 
+	-khtml-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none; 
+}
+
+.noclick {
+	pointer-events:none;
+}
+
+/***********
+CONTAINERS
+************/
+.container {
+	margin: 0 auto;
+	width: 50%;
+	position: relative;
+}
+
+.container-large {
+	margin: 0 auto;
+	width: 55%;
+	position: relative;
+}
+
+@media only screen and (max-width: 1282px) {
+	.container {
+		width: 60%;
+	}
+	.container-large {
+		width: 65%;
+	}
+}
+
+@media only screen and (max-width: 1081px) {
+	.container {
+		width: 70%;
+	}
+	.container-large {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 941px) {
+	.container {
+		width: 80%;
+	}
+	.container-large {
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 835px) {
+	.container {
+		width: 90%;
+	}
+	.container-large {
+		width: 95%;
+	}
+}
+
+/***********
+LOGO
+************/
+.header-logo {
+	position: absolute;
+	left: 0;
+	width: 300px;
+	padding-top: 1em;
+}
+
+.header-logo-small {
+	width: 75%;
+	display: block;
+	padding-top: 1em;
+	display: none;
+}
+
+@media only screen and (max-width: 671px) {
+	.header-logo {
+		display: none;
+	}
+
+	.header-logo-small {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+/***********
+NAVIGATION
+************/
+nav {
+	position: relative;
+	z-index: 100;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+
+nav ul li {
+	padding: 1em 0 0 1em;
+	color: var(--my-grey);
+	font-size: 1.5rem;
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: var(--my-grey);
+}
+
+nav ul li a:hover {
+	color: var(--my-orange);
+	border-bottom: 4px solid var(--my-orange);
+}
+
+@media only screen and (max-width: 671px) {
+	nav ul {
+		justify-content: center;
+
+	}
+
+	nav ul li:first-child {
+		padding-left: 0;
+	}
+
+	nav ul li {
+		padding-top: 1.5em;
+
+	}
+}
+
+/***********
+QUOTE BANNER
+************/
+.quote-banner {
+	background-image: linear-gradient(to bottom, rgba(231,167,155,1) 0%,rgba(231,167,155,0.7) 100%), url("/images/quote-banner-background.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	background-color: var(--my-orange);
+	margin-top: 18em;
+	width: 100%;
+}
+
+.quote-banner-image {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 500px;
+}
+
+.quote-text {
+	color: white;
+	padding: 2.5rem 0;
+	font-style: italic;
+	font-size: 2.2rem;
+	letter-spacing: 0.1rem;
+	line-height: 1.3em;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+@media only screen and (max-width: 1736px) {
+	.quote-text {
+		font-size: 2rem;
+	}
+
+	.quote-banner-image {
+		width: 450px;
+	}
+}
+
+@media only screen and (max-width: 1586px) {
+	.quote-text {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 1347px) {
+	.quote-banner-image {
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 748px) {
+	.quote-text {
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (max-width: 671px) {
+	.quote-banner {
+		display: none;
+	}
+}
+
+/***********
+TYPOGRAPHY
+************/
+h1 {
+	padding: 6rem 0;
+	color: var(--my-orange);
+	font-size: 5em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+}
+
+h1::after {
+	content: "";
+	display: block;
+	padding-top: 0.2em;
+	width: 20%;
+	margin: 0 auto;
+	border-bottom: 8px solid var(--my-orange);
+}
+
+.biography-h1 {
+	align-self: center;
+	flex: 0 1 100%;
+}
+
+@media only screen and (max-width: 1423px) {
+	h1 {
+		padding: 4rem 0;
+		font-size: 4rem;
+	}
+}
+
+@media only screen and (max-width: 762px) {
+	h1 {
+		font-size: 2.8rem;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	h1 {
+		font-size: 2rem;
+	}
+}
+
+/***********
+BIOGRAPHY
+************/
+#title {
+}
+
+#img-div {
+	
+	text-align: center;
+}
+
+#image {
+	max-width: 800px;
+}
+
+#img-caption {
+	display: none;
+}
+
+.biography-section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-bottom: 6rem;
+}
+
+#tribute-info {
+	color: var(--my-grey);
+	font-size: 1.2rem;
+	font-family: sans-serif;
+	line-height: 1.5em;
+	align-self: start;
+	padding-left: 2em;
+	flex: 1 0 50%;
+}
+
+.biography-image {
+	max-height: 450px;
+	align-self: start;
+	flex: 1 0 50%;
+}
+
+.biography-text-btn {
+	flex: 0 1 100%;
+	padding-top: 1em;
+}
+
+.biography-text-btn ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+}
+
+.biography-text-btn ul li {
+	font-size: 2.5rem;
+	padding-left: 0.5em;
+	color: var(--my-grey);
+}
+
+
+.biography-text-btn ul li a {
+	color: var(--my-grey);
+}
+
+.biography-text-btn ul li a:hover {
+	color: var(--my-orange);
+}
+
+.biography-learn-more-btn {
+	outline: none;
+	background-color: var(--my-grey);
+	color: white;
+	border: 1px solid var(--my-grey);
+	border-radius: 40px;
+	padding: 1.2em;
+	
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.8em;
+	margin-top: 1em;
+	
+}
+
+.biography-learn-more-btn:hover {
+	background-color: var(--my-orange);
+	border-color: var(--my-orange);
+}
+
+.biography-image-caption {
+	padding: 1em 0;
+	color: var(--my-orange);
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.biography-image-caption-small {
+	display: none;
+}
+
+.biography-image-crop {
+	max-width: 300px;
+	overflow: hidden;
+	text-indent: -100px;
+}
+
+.biography-image-crop img {
+	max-width: initial;
+}
+
+@media only screen and (max-width: 1423px) {
+
+	.biography-section {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		padding-bottom: 4rem;
+	}
+
+	#tribute-info {
+		margin-top: 1em;
+		padding-left: 0;
+	}
+
+	#image {
+		display:block;
+	}
+
+	.biography-image {
+		align-self: center;
+		margin-top: -4em;
+		width: 100%;
+		max-height: 100%;
+	}
+
+	.biography-image-crop {
+		max-width: 100%;
+		max-height: 300px;
+		overflow: hidden;
+		text-indent: 0;
+	}
+
+	.biography-image-caption-large {
+		display: none;
+	}
+
+	.biography-image-caption-small {
+		display: block;
+	}
+
+	.biography-learn-more-btn {
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 835px) {
+	.biography-text-btn ul {
+		padding-top: 1rem;
+		justify-content: center;
+	}
+
+	.biography-text-btn ul li:first-child {
+		padding-left: 0;
+	}
+
+}
+
+
+/***********
+FILMOGRAPHY
+************/
+.film-section {
+	background-image: linear-gradient(to bottom, rgba(245,237,201,1) 0%,rgba(245,237,201,0.8) 100%), url("/images/filmography-background.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	background-color: var(--my-yellow);
+}
+
+
+.film-list {
+	width:100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 0 0.6em;
+
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.film-cover {
+	width: 100%;
+}
+
+.film-list-item-anim:hover {
+	animation-name: coverFade;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes coverFade {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0.4;
+	}
+}
+
+.film-list-item {
+	position: relative;
+	background-color: black;
+	overflow: hidden;
+}
+
+.film-cover:hover  + .film-list-item-detail-anim {
+	animation-name: filmDetail;
+	animation-duration: 0.4s;
+	animation-fill-mode: forwards;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
+@keyframes filmDetail {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, -200px);
+	}
+}
+
+
+.film-list-item-detail {
+	position: absolute;
+	bottom: -200px;
+	
+	background: var(--my-orange);
+	padding: 2em 0 2em 0;
+	animation-timing-function: ease-out;
+
+	color: white;
+	font-size: 1em;
+	line-height: 1.3em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	z-index: 200;
+
+	width: 100%;
+	pointer-events:none;
+
+}
+
+#film-more {
+	position: relative;
+	display:flex;
+	justify-content: flex-end;
+
+	padding-bottom: 6rem;
+}
+
+#film-more-btn {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background: none;
+	color: var(--my-grey);
+	font-size: 2.5em;
+	padding-top: 0.5em;
+}
+
+#film-more-btn:hover {
+	color: var(--my-orange);
+}
+
+#film-more-btn:hover {
+	color: var(--my-orange);
+}
+
+.film-group-1 {
+	display: block;
+}
+
+.film-group-2 {
+	display: none;
+}
+
+.film-group-3 {
+	display: none;
+}
+
+
+@media only screen and (max-width: 1423px) {
+	.film-list {
+		grid-template-columns: 1fr 1fr ;
+	}
+
+	#film-more {
+		justify-content: center;
+		padding-bottom: 4rem;
+	}
+
+	.film-list-item:nth-child(3),
+	.film-list-item:nth-child(4) {
+		margin-top: 0.6em;
+	}
+}
+
+
+@media only screen and (max-width: 835px) {
+	.film-section {
+		background-image: none;
+	}
+
+	#film-more {
+		justify-content: center;
+	}	
+}
+
+/***********
+FOOTER
+************/
+footer {
+	background-color: var(--my-grey);
+}
+
+footer p {
+	padding: 2rem 0;
+	text-align: center;
+	color: white;
+	font-size: 0.8rem;
+	opacity: 0.7;
+}
