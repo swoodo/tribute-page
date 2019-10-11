@@ -296,7 +296,7 @@ BIOGRAPHY
 	padding-bottom: 6rem;
 }
 
-#tribute-info {
+#biography-text {
 	color: var(--my-grey);
 	font-size: 1.2rem;
 	font-family: sans-serif;
@@ -387,7 +387,7 @@ BIOGRAPHY
 		padding-bottom: 4rem;
 	}
 
-	#tribute-info {
+	#biography-text {
 		margin-top: 1em;
 		padding-left: 0;
 	}
