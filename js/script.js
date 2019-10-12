@@ -92,7 +92,7 @@ function filmReveal() {
 		for (var i = 0; i < films.length; i++) {
 			films[i].style.display = "none";
 		}
-		var group2Margin = document.getElementsByClassName("film-list-item");
+		var group3Margin = document.getElementsByClassName("film-list-item");
 		for (var i = 8; i <= 11; i++) {
 			group2Margin[i].style.margin = "0 0 0 0";
 		}
@@ -104,7 +104,7 @@ function filmReveal() {
 		}
 		var group2Margin = document.getElementsByClassName("film-list-item");
 		for (var i = 4; i <= 7; i++) {
-			group2Margin[i].style.margin = "0 0 0 0";
+			group3Margin[i].style.margin = "0 0 0 0";
 		}
 		document.getElementById("film-see-more-btn").style.transform= "rotate(-360deg)";
 		document.getElementById("film-see-more-btn").style.padding= "0.5rem 0 0 0";
