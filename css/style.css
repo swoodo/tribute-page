@@ -219,12 +219,31 @@ SCROLL NAVIGATION
 	
 }
 
+#hamburger-menu {
+	position: absolute;
+	right: 0;
+	font-size: 1.5rem;
+}
+
+#hamburger-cross {
+	display:none;
+	cursor: pointer;
+}
+
+#hamburger-bars {
+	cursor: pointer;
+}
+
+#hamburger-cross:hover,
+#hamburger-bars:hover {
+	color: var(--my-orange);
+}
+
 #scroll-nav-flex ul {
 	list-style-type: none;
-	display: flex;
 	width: 100%;
 	justify-content: flex-end;
-
+	display: none;
 	height: 100%;
 
 }
@@ -253,6 +272,20 @@ SCROLL NAVIGATION
 	animation-fill-mode: forwards;
 
 	border-bottom: 0.3rem solid var(--my-orange);
+}
+
+@media only screen and (min-width: 791px) {
+	#hamburger-menu {
+		display: none;
+	}
+
+	#scroll-nav-flex ul {
+		display: flex;
+	}
+
+	#hamburger-show {
+		display: flex !important;
+	}
 }
 
 

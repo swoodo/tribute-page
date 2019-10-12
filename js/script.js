@@ -122,3 +122,21 @@ function scrollNav() {
         document.getElementById("scroll-nav").style.top = "-200px";
     }
 }
+
+// hamburger menu
+var hamburgerCount = 0
+function hamburger() {
+	hamburgerCount++;
+	if (hamburgerCount % 2 == 0) {
+		document.getElementById("hamburger-menu").style.right = "0px";
+		document.getElementById("hamburger-show").style.display = "none";
+		document.getElementById("hamburger-bars").style.display = "block";
+		document.getElementById("hamburger-cross").style.display = "none";
+		
+	} else {
+		document.getElementById("hamburger-menu").style.right = "190px";
+		document.getElementById("hamburger-show").style.display = "flex";
+		document.getElementById("hamburger-bars").style.display = "none";
+		document.getElementById("hamburger-cross").style.display = "block";
+	}
+}
