@@ -686,6 +686,10 @@ BUTTONS
 
 }
 
+#biography-learn-more-btn:active {
+	box-shadow: none;
+}
+
 
 /*******************
 FOOTER
